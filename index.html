@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="fontawesome.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link  rel="stylesheet" href="animate.css">
+  <link href="hover.css" rel="stylesheet" media="all">
+  
+ 
+
+
+</head>
+
+<body>
+  <!--
+        in bootostarp 4 there is no :navbar-right , navbar-left as bootostrap 3
+        but there is
+        mr-auto ===> that mean margin-right
+        ml-auto ===> that mean margin-left
+
+
+    -->
+
+  <!--start upperbar-->
+  <div class="upper-bar">
+    <div class="container">
+      <div class="row">
+        <div class="info col-sm text-center  text-sm-left">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="info1 col-sm text-center text-sm-left">
+          <span class="get-quote"><i class="fa fa-phone"></i>(+1) 234 5678 9101</span>
+          <span class="get-quote"> <i class="fa fa-envelope-o"></i> shop@yourdomain.com </span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--end upperbar-->
+
+  <!--start navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light   ">
+    <div class="container">
+      <a class="navbar-brand hvr-pop" href="#">
+        <span>Selling</span>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link  " href="#" data-scroll="home">Home </a>
+          </li>
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#" data-scroll="product"> Products</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#" data-scroll="about-us" >About Us<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#"  data-scroll="special">Special </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#" data-scroll="testimonial">Testimonial </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#" data-scroll="blog">Blog </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#" data-scroll="contact">Contact </a>
+          </li>
+
+
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+  <!--end navbar-->
+  <!--start home section-->
+  <div class="home block" id="home">
+    <div class="overlay">
+      <div class="container">
+        <div class="caption wow bounceInUp"  data-wow-duration="2s" data-wow-delay="3s" data-wow-offset="400" data-wow-iteration="3" >
+          <h1>Shop With Us</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere
+            deleniti fuga officia.</p>
+
+          <div class="buttons">
+            <button>SHOP NOW</button>
+            <button>ClUB MEMBERSHIP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end home section-->
+  <!--start products-->
+  <div class="products text-center block" id="product">
+    <div class="container">
+      <p>POPULAR PRODUCTS</p>
+      <h1 class=" wow shake"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">Our Products</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam
+        accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+      <div class="allproducts">
+        <div class="row">
+          <div class="col-lg-4 col-md-6  col-12">
+            <div class="product wow zoomIn"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+
+              <img src="product1.JPG" alt="product1">
+
+              <div class="detail">
+                <h5>Wild West Hoodie</h5>
+                <span><i class="fa fa-star-o"></i> 0.5</span><span><i class="fa fa-heart-o"></i> 29</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="buttons">
+                  <button>CART</button>
+                  <button>VIEW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product wow zoomIn"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+
+              <img src="product2.JPG" alt="product2">
+
+              <div class="detail">
+                <h5>Wild West Hoodie</h5>
+                <span><i class="fa fa-star-o"></i> 0.5</span><span><i class="fa fa-heart-o"></i> 29</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="buttons">
+                  <button>CART</button>
+                  <button>VIEW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6  col-12">
+            <div class="product wow zoomIn"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+
+              <img src="product3.JPG" alt="product3">
+
+              <div class="detail">
+                <h5>Wild West Hoodie</h5>
+                <span><i class="fa fa-star-o"></i> 0.5</span><span><i class="fa fa-heart-o"></i> 29</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="buttons">
+                  <button>CART</button>
+                  <button>VIEW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6  col-12">
+            <div class="product wow zoomIn"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+
+              <img src="product4.JPG" alt="product4">
+
+              <div class="detail">
+                <h5>Wild West Hoodie</h5>
+                <span><i class="fa fa-star-o"></i> 0.5</span><span><i class="fa fa-heart-o"></i> 29</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="buttons">
+                  <button>CART</button>
+                  <button>VIEW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product wow zoomIn"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+
+              <img src="product5.JPG" alt="product5">
+
+              <div class="detail">
+                <h5>Wild West Hoodie</h5>
+                <span><i class="fa fa-star-o"></i> 0.5</span><span><i class="fa fa-heart-o"></i> 29</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="buttons">
+                  <button>CART</button>
+                  <button>VIEW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6  col-12">
+            <div class="product  wow zoomIn"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+
+              <img src="product6.JPG" alt="product6">
+
+              <div class="detail">
+                <h5>Wild West Hoodie</h5>
+                <span><i class="fa fa-star-o"></i> 0.5</span><span><i class="fa fa-heart-o"></i> 29</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="buttons">
+                  <button>CART</button>
+                  <button>VIEW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--end products-->
+  <!--start subscribe section-->
+  <div class="subscribe text-center">
+    <div class="sub">
+      <div class="container">
+        <h1 class="wow bounceInUp"  data-wow-duration="2s" data-wow-delay="3s" data-wow-offset="400" data-wow-iteration="3">Get notified on each updates.</h1>
+
+        <div class="input-group mb-3 wow fadeInLeft"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+          <input class="form-control" type="email" placeholder="Write your email">
+          <div class="input-group-append">
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi veniam <br>doloremque ducimus
+          tempora.</p>
+
+      </div>
+    </div>
+
+  </div>
+  <!--end subscribe section-->
+  <!--start feature-->
+  <div class="feature">
+    <div class="container">
+      <div class="totalbox">
+        <div class="box wow fadeInUp"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="400">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <img src="about-pro.JPG" alt="about-pro">
+            </div>
+            <div class="col-md-6 col-12">
+              <h1>About This Product</h1>
+              <p>Et tempora id nostrum saepe amet doloribus deserunt totam officiis cupiditate asperiores quasi
+                accusantium voluptatum dolorem quae sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta assumenda sed optio, error at?
+              </p>
+              <h4>Price:</h4>
+              <span> $269.00</span><span> $69.00</span>
+              <div class="buttons">
+                <button>add to cart</button>
+                <button>view details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box wow fadeInDown"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="400">
+          <div class="row">
+
+            <div class="col-md-6 col-12">
+
+              <h1>About This Product</h1>
+              <p>Et tempora id nostrum saepe amet doloribus deserunt totam officiis cupiditate asperiores quasi
+                accusantium voluptatum dolorem quae sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta assumenda sed optio, error at?
+              </p>
+              <h4>Price:</h4>
+              <span> $269.00</span><span> $69.00</span>
+              <div class="buttons">
+                <button>add to cart</button>
+                <button>view details</button>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+
+              <img src="about-pro2.JPG" alt="about-pro2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end feature-->
+  <!--start about us-->
+  <div class="aboutus block" id="about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12 wow fadeInUp"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="400">
+          <img src="aboutus.JPG" alt="aboutus">
+          <div class="box1">
+            <h1>Trusted Merchant</h1>
+            <h6>FOR 50 YEARS</h6>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 box2 wow fadeInDown"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="400">
+          <p>MERCHANT COMPANY</p>
+          <h1>About Us</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil,
+            consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius
+            vero vel!</p>
+          <button>LEARN MORE</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--end about us-->
+  <!--start team-->
+  <div class="team text-center">
+    <div class="container">
+      <p>TEAM</p>
+      <h1>Leadership</h1>
+      <div class="row box">
+          <div class="col-lg-4 col-md-6 col-12" >
+              <div class=" wow bounceOut"  data-wow-duration="4s" data-wow-delay="1s" data-wow-offset="400">
+              <img src="team1.JPG" alt="team1">
+              <p>John Rooster</p>
+              <h6>CO-FOUNDER, PRESIDENT</h6>
+              <p>Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium
+                distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+    
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+    
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+    
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+                </div>
+            </div>
+    
+
+        <div class="col-lg-4 col-md-6 col-12" >
+          <div class=" wow bounceOut"  data-wow-duration="4s" data-wow-delay="1s" data-wow-offset="400">
+          <img src="team2.JPG" alt="team2">
+          <p>John Rooster</p>
+          <h6>CO-FOUNDER, PRESIDENT</h6>
+          <p>Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium
+            distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12" >
+            <div class=" wow bounceOut"  data-wow-duration="4s" data-wow-delay="1s" data-wow-offset="400">
+            <img src="team3.JPG"   alt="team3">
+            <p>John Rooster</p>
+            <h6>CO-FOUNDER, PRESIDENT</h6>
+            <p>Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium
+              distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+  
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+  
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+  
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+              </div>
+          </div>
+  
+      </div>
+
+    </div>
+
+  </div>
+  <!--end team-->
+
+<!--start subscribe section-->
+<div class="special text-center block" id="special">
+    <div class="counter">
+       <div class="container">
+         <p>SPECIAL PROMO</p>
+        <h1>Summer Sale.</h1>
+        <p>Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam..</p>
+
+          <ul class="list-unstyled">
+              <li  class="wow fadeInDown"  data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="400">
+                <span id="week"></span>
+                <span>weeks</span>
+              </li>
+            
+              <li>
+                  <span id="day"></span>
+                  <span>days</span>
+              </li>
+  
+              <li class="wow fadeInDown"  data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="400">
+               
+                  <span id="hr"></span>
+                  <span>hr</span>
+              </li>
+  
+              <li>
+                  <span id="min"></span>
+                  <span>min</span>
+              </li>
+
+              <li class="wow fadeInDown"  data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="400">
+               
+                  <span id="sec"></span>
+                  <span>sec</span>
+              </li>
+            </ul>
+       <button>shop now</button>
+      </div>
+    </div>
+
+  </div>
+  <!--end subscribe section-->
+
+
+  <!--start our service-->
+  <div class="services text-center">
+    <div class="container">
+      <p>OUR SERVICES</p>
+      <h1>We Offer Services</h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="feat hvr-grow-rotate  wow bounceInRight"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+   
+          <div class="row">
+            <div class="col-2">
+              <img src="business-consulting.JPG"   alt="business-consulting">
+            </div>
+            <div class="col-10">
+              <div class="capt text-left">
+                <p>Business Consulting</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <a>learn more</a>
+              </div>
+            </div>
+          </div>
+</div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="feat hvr-grow-rotate  wow bounceInRight"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+   
+          <div class="row">
+            <div class="col-2">
+              <img src="marker-analysis.JPG"  alt="marker-analysis">
+            </div>
+            <div class="col-10">
+              <div class="capt text-left">
+                <p>Market Analysis</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <a>learn more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="feat hvr-grow-rotate  wow bounceInRight"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+   
+          <div class="row">
+            <div class="col-2">
+              <img src="user-monitering.JPG" alt="user-monitering">
+            </div>
+            <div class="col-10">
+              <div class="capt text-left">
+                <p>User Monitoring</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <a>learn more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+</div>
+
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="feat hvr-grow-rotate  wow bounceInLeft"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+   
+          <div class="row">
+            <div class="col-2">
+              <img src="consulting.JPG"  alt="consulting">
+            </div>
+            <div class="col-10">
+              <div class="capt text-left">
+                <p>Seller Consulting</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <a>learn more</a>
+              </div>
+            </div>
+          </div>
+</div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="feat hvr-grow-rotate  wow bounceInLeft"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+   
+          <div class="row">
+            <div class="col-2">
+              <img src="investment.JPG" alt="investment">
+            </div>
+            <div class="col-10">
+              <div class="capt text-left">
+                <p>Financial Investment</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <a>learn more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="feat hvr-grow-rotate  wow bounceInLeft"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+   
+          <div class="row">
+            <div class="col-2">
+              <img src="managment.JPG" alt="managment">
+            </div>
+            <div class="col-10">
+              <div class="capt text-left">
+                <p>Financial Management</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <a>learn more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+  <!--end our service-->
+  <!--start testimonial -->
+  <div class="testimonial text-center block" id="testimonial">
+
+    <div class="container">
+      <p>PEOPLE SAYS</p>
+      <h1>Testimonials</h1>
+      <div id="testimonial" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li data-target="#testimonial" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonial" data-slide-to="1"></li>
+          <li data-target="#testimonial" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item  active">
+
+            <div class="carousel-caption">
+              <img class="rounded-circle" src="team2.JPG" alt="avater1" width="100%" height="100%">
+
+
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
+
+              <h3>Tom Sharp</h3>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+
+            <div class="carousel-caption ">
+              <img class="rounded-circle" src="team1.JPG" alt="avater2">
+
+
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
+
+              <h3>John Rooster</h3>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+
+            <div class="carousel-caption ">
+              <img class="rounded-circle" src="team3.JPG" alt="avater3">
+
+
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
+
+              <h3>Winston Hodson</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--end testmonial -->
+
+  <!--start blog-->
+  <div class="blog text-center block" id="blog">
+    <div class="container">
+      <p>BLOG</p>
+      <h1>Blog Posts</h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="bloger text-left">
+            <img src="product1.JPG" alt="product1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <span>Ham Brook </span><span>.</span><span> Jan 18, 2019</span><span>.</span><a href="#">News</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente
+              veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            <a href="#">Continue Reading...</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="bloger text-left">
+            <img src="product6.JPG" alt="product6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <span>Ham Brook </span><span>.</span><span> Jan 18, 2019</span><span>.</span><a href="#">News</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente
+              veritatis reprehenderit suscipit quaerat rergum voluptatibus a eius.</p>
+            <a href="#">Continue Reading...</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="bloger text-left">
+            <img src="product5.JPG" alt="product5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <span>Ham Brook </span><span>.</span><span> Jan 18, 2019</span><span>.</span><a href="#">News</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente
+              veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            <a href="#">Continue Reading...</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ 
+  <!--end blog-->
+  <!--start contact-->
+  <div class="contact block" id="contact">
+    <div class="container">
+      <div class="con">
+          <p>CONTACT FORM</p>
+          <h1>Get In Touch</h1>
+          <form>
+             
+              <div class="form-row wow bounceOutUp"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+            
+            
+               <div class="form-group col-md-6">
+                  <label for="FisrtName">FisrtName</label>
+                  <input type="text" class="form-control  " id="FisrtName" >
+                </div>
+                <div class="form-group col-md-6 ">
+                    <label for="LastName">LastName</label>
+                    <input type="text" class="form-control" id="LastName">
+                  </div>
+               
+              </div>
+             
+              <div class="form-group wow bounceOutUp"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+            
+            
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="Email">
+              </div>
+               
+              <div class="form-group ">
+                  <label for="Subject">Subject</label>
+                  <input type="text" class="form-control" id="Subject">
+                </div>
+
+                <div class="form-group wow bounceOutUp"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
+            
+            
+                    <label for="Message">Message</label>
+                    <textarea rows="5" class="form-control"  placeholder="Write your questions or notes here..." id="Message"></textarea> 
+                  </div>
+                   
+               <button type="submit"  >send message</button>
+              
+            </form>
+        
+       
+      </div>
+
+    </div>
+
+  </div>
+  <!--end contact-->
+  <!--start footer-->
+  <div class="footer">
+<div class="container">
+<div class="foot">
+<div class="row">
+<div class="col-lg-3 col-md-6 col-12  text-center  text-md-left">
+<h5>ABOUT US</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+</div>
+<div class="col-lg-3 col-md-6 col-12  text-center  text-md-left">
+<h5>QUICK LINKS</h5>
+<ul class="list-unstyled links">
+    <li>
+      <a href="#">About Us </a>
+    </li>
+
+    <li>
+      <a href="#">Services </a>
+    </li>
+
+    <li>
+      <a href="#"> Testimonials </a>
+    </li>
+
+    <li>
+      <a href="#">Contact Us </a>
+    </li>
+  </ul>
+  </div>
+  <div class="col-lg-3 col-md-6 col-12  text-center  text-md-left">
+    <h5>FOLLOW US</h5>
+      <ul class="list-unstyled icons">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12 text-center  text-md-left">
+     <h5>FEATURED PRODUCT</h5>
+     <img src="footer-product.JPG" alt="footer-product">
+     <h4>Leather Brown Shoe</h4>
+     <h6>$60.00</h6>
+     <button>ADD TO CART</button>
+      </div>
+</div>
+</div>
+</div>
+  </div>
+<div> 
+  <a class="scroll-to-top" href="#">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a>
+</div>
+  <div class="copyright text-center">
+      Copyright ©2019 All rights reserved
+  </div>
+
+
+ 
+  <!--end footer-->
+  <!--start load page-->
+  <div class="load">
+  <div class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+    <div class="sk-cube sk-cube9"></div>
+  </div>
+</div>
+  <!--end load page-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="swiper.min.js"></script>
+  <script  src="index.js"></script>
+  <script src="jquery.nicescroll.min.js"></script>
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init();
+    </script>
+
+</body>
+
+</html>
