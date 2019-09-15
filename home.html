@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet'>
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Uploaded Image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src(unknown) />
+                   </div>
+                <div class="modal-footer">
+                         <a>Remove Image</a>
+                        <button type="button" class="" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sidebar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+        <div class="container-fluid  ">
+
+            <a class="navbar-brand" href="#">
+                <span>Elite</span>
+                <span>Corp</span>
+            </a>
+            <button type="button" id="sidebarCollapse" class="btn btn-info ">
+                <i class="fa fa-align-left"></i>
+            </button>
+        </div>
+    </nav>
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h5>Elite corp</h5>
+            <strong>Ec</strong>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active home" data-content=".home">
+                <a href="#homeSubmenu">
+                    <i class="fa fa-home"></i>
+                    <span>Home</span>
+                </a>
+
+            </li>
+
+            <li>
+                <h6>EMPLOYEES</h6>
+            </li>
+            <li>
+                <a href="#employeeSubmenu" data-toggle="collapse" aria-expanded="false">
+                    <i class="fa fa-users"></i>
+                    <span>Employees</span>
+                </a>
+                <ul class="collapse list-unstyled" id="employeeSubmenu">
+                    <li data-content=".add-employee">
+                        <a href="#">Add Employee</a>
+                    </li>
+                    <li data-content=".employee-operation">
+                        <a href="#">Employee operation</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <h6>STUDENTS</h6>
+            </li>
+            <li>
+                <a href="#studentSubmenu" data-toggle="collapse" aria-expanded="false">
+                    <i class="fa fa-child"></i>
+                    <span>Students</span>
+                </a>
+                <ul class="collapse list-unstyled" id="studentSubmenu">
+                    <li data-content=".add-student">
+                        <a href="#">Add Student</a>
+                    </li>
+                    <li data-content=".student-operation">
+                        <a href="#">Student operation</a>
+                    </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <h6>PRODUCTS</h6>
+            </li>
+            <li>
+                <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false">
+                    <i class="fa fa-product-hunt"></i>
+                    <span>Products</span>
+                </a>
+                <ul class="collapse list-unstyled" id="productSubmenu">
+                    <li data-content=".add-product">
+                        <a href="#">Add Products</a>
+                    </li>
+                    <li data-content=".product-operation">
+                        <a href="#"> Products operation</a>
+                    </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <h6> <i class="fa fa-angle-right"></i> </h6>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- Page Content -->
+    <section class="items home">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 ">
+
+                    <ul class="employee ">
+                        <li> <i class="fa fa-users"></i></li>
+                        <li>Employees</li>
+                        <li><span> <a href=""><i class="fa fa-tasks"></i> </a> Oper </span> <span><a
+                                    href="#add-employee"><i class="fa fa-plus"></i></a>Add </span></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <ul class="student">
+                        <li><i class="fa fa-child"></i></li>
+                        <li>Students</li>
+                        <li><span> <a href=""><i class="fa fa-tasks"></i> </a> Oper </span> <span><a href=""><i
+                                        class="fa fa-plus"></i></a>Add </span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <ul class="product">
+                        <li> <i class="fa fa-product-hunt"></i></li>
+                        <li>Products</li>
+                        <li><span> <a href=""><i class="fa fa-tasks"></i> </a> Oper </span> <span><a href=""><i
+                                        class="fa fa-plus"></i></a>Add </span></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="add-employee" id="add-employee">
+
+        <div class="container">
+
+
+            <div class="con">
+                <h5> <i class="fa fa-users"></i></h5>
+                <h2>Employees Form</h2>
+                <form id="myform1">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="FisrtName">FisrtName :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fa fa-user "></i></span>
+                                <input id="FirstName" type="text" name="FirstName" placeholder=" " class="form-control"
+                                    Autocomplete=off Autofocus=on>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="LastName">LastName :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fa fa-user "></i></span>
+                                <input type="text" class="form-control" id="LastName" name="LastName" placeholder=" "
+                                    class="form-control" Autocomplete=off>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Email">Email :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fa fa-envelope"></i></span>
+                                <input id="Email" type="text" name="Email" placeholder=" " class="form-control"
+                                    Autocomplete=off>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="PhoneNumber">Phone Number :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fa fa-phone"></i></span>
+                                <input type="tel" class="form-control" id="PhoneNumber" name="PhoneNumber"
+                                    placeholder=" " class="form-control" Autocomplete=off>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Birthday">Birthday :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon "><i class="fa fa-calendar"></i></span>
+                                <input id="Birthday" type="date" name="Birthday" placeholder=" " class="form-control"
+                                    Autocomplete=off>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="Country">Country :</label>
+                            <div class="input-group  ">
+                                <span class="input-group-addon "><i class="fa fa-flag"></i></span>
+                                <select id="Country" class="form-control" name="Country"  Autocomplete=off >
+                                 <option value="" selected disabled>
+                                    <option>Egypt</option>
+                                    <option>Syria</option>
+                                    <option>Qatar</option>
+                                    <option>Algeria</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="Gender">Gender :</label>
+                        <div class="input-group ">
+                            <span class="input-group-addon rd"><i class="fa fa-transgender"></i></span>
+                            <input type="radio" id="Male" name="radio-group" value="Male" checked>
+                            <label for="Male">Male</label>
+                            <input type="radio" id="Female" value="Female"  name="radio-group" >
+                            <label for="Female">Female</label>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <label for="Image">Upload Image :</label>
+                        <div class=" input-group ">
+                            <div class="custom-file">
+                                <input class="form-control" type="file" data-content="employee-file" />
+                            </div>
+                            <div class="input-group-append">
+                                <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter"
+                                    data-content="employee-button">
+                                    Preview Image
+                                </button></div>
+                        </div>
+
+
+                    </div>
+
+                    <button type="button"  class="form-control em" data-content=".employee-operation" data-target="#employee-operation"  onclick="previewFilesOfEmployee()" >Add</button>
+
+                    
+                </form>
+
+                
+
+            </div>
+
+        
+           
+
+
+    </section>
+ 
+    <section class="employee-operation" id="employee-operation">
+        <div  >
+        <div class="card" >
+            
+                <div class="card-header">
+                       <strong>Employee operation</strong>
+                      </div>
+                      <div class="table-responsive">
+        <table id="myTable1" class="card-table table" >
+               
+            <tbody class="card-body">
+              
+                <tr>
+                    <th>Image</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                    <th>PhoneNum</th>
+                    <th>Birthday</th>
+                    <th>Gender</th>
+                    <th>Country</th>
+                    <th>operation</th>
+                  
+                    
+                </tr>
+              </tbody>
+        </table>
+     </div>
+</div>
+</div>
+
+    </section>
+    
+
+
+    <section class="add-student" id="add-student">
+
+        <div class="container">
+
+
+            <div class="con">
+                <h5> <i class="fa fa-child"></i></h5>
+                <h2>Students Form</h2>
+                <form id="myform2">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="FisrtName1">FisrtName :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fa fa-user "></i></span>
+                                <input id="FisrtName1" type="text" name="FisrtName1" placeholder=" " class="form-control"
+                                    Autocomplete=off Autofocus=on>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="LastName1">LastName :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fa fa-user "></i></span>
+                                <input type="text" class="form-control" id="LastName1" name="LastName1" placeholder=" "
+                                    class="form-control" Autocomplete=off>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Email1">Email :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fa fa-envelope"></i></span>
+                                <input id="Email1" type="text" name="Email1" placeholder=" " class="form-control"
+                                    Autocomplete=off>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="PhoneNumber1">Phone Number :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fa fa-phone"></i></span>
+                                <input type="tel" class="form-control" id="PhoneNumber1" name="PhoneNumber1"
+                                    placeholder=" " class="form-control" Autocomplete=off>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Birthday1">Birthday :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon "><i class="fa fa-calendar"></i></span>
+                                <input id="Birthday1" type="date" name="Birthday1" placeholder=" " class="form-control"
+                                    Autocomplete=off>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="Country1">Country :</label>
+                            <div class="input-group  ">
+                                <span class="input-group-addon "><i class="fa fa-flag"></i></span>
+                                <select id="Country1" class="form-control" Autocomplete=off>
+                                    <option value="" selected disabled>
+                                    <option>Egypt</option>
+                                    <option>Syria</option>
+                                    <option>Qatar</option>
+                                    <option>Algeria</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="Gender1">Gender :</label>
+                        <div class="input-group ">
+                            <span class="input-group-addon rd"><i class="fa fa-transgender"></i></span>
+                            <input type="radio" id="Male1" name="radio-group" value="Male" checked>
+                            <label for="Male1">Male</label>
+                            <input type="radio" id="Female1" name="radio-group"  value="Female"> 
+                            <label for="Female1">Female</label>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <label for="Image1">Upload Image :</label>
+                        <div class=" input-group ">
+                            <div class="custom-file">
+                                <input class="form-control" type="file" data-content="student-file" />
+                            </div>
+                            <div class="input-group-append">
+                                <button type="button"  data-toggle="modal" data-target="#exampleModalCenter"
+                                    data-content="student-button">
+                                    Preview Image
+                                </button></div>
+                        </div>
+
+
+                    </div>
+
+
+                    <button type="submit" class="form-control st" data-content=".student-operation" data-target="#student-operation"  onclick="previewFilesOfStudent()" >
+
+                        Add</button>
+
+                </form>
+
+
+
+            </div>
+
+
+
+
+
+
+    </section>
+    <section class="student-operation" id="student-operation">
+            <div  >
+            <div class="card" >
+                
+                    <div class="card-header">
+                           <strong>Employee operation</strong>
+                          </div>
+                          <div class="table-responsive">
+            <table id="myTable2" class="card-table table" >
+                   
+                <tbody class="card-body">
+                  
+                    <tr>
+                        <th>Image</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Email</th>
+                        <th>PhoneNum</th>
+                        <th>Birthday</th>
+                        <th>Gender</th>
+                        <th>Country</th>
+                        <th>operation</th>
+                      
+                        
+                    </tr>
+                  </tbody>
+            </table>
+         </div>
+    </div>
+    </div>
+    
+    </section>
+
+
+    <section class="add-product" id="add-product">
+
+        <div class="container">
+
+
+            <div class="con">
+                <h5> <i class="fa fa-product-hunt"></i></h5>
+                <h2>Products Form</h2>
+                <form id="myform3">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for=" ProductName">Product's name :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fa fa-product-hunt"></i></span>
+                                <input id="ProductName" type="text" name=" ProductName" placeholder=" "
+                                    class="form-control" Autocomplete=off Autofocus=on>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="ProductQuantity">Product's quantity :</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon  "><i class="fas fa-sort-amount-up"></i></span>
+                                <input type="number" value="" min="0" step="1" class="form-control"
+                                    id="ProductQuantity" name="ProductQuantity" placeholder=" " class="form-control"
+                                    Autocomplete=off>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="price">Product's price:</label>
+                            <div class="input-group ">
+                                <span class="input-group-addon "><i class="fas fa-hand-holding-usd"></i></span>
+                                <input id="price" type="number" value="" min="0" step="1" name="price" placeholder=" "
+                                    class="form-control" Autocomplete=off>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="Currency">Currency :</label>
+                            <div class="input-group  ">
+                                <span class="input-group-addon "><i class="fa fa-money"></i></span>
+                                <select id="Currency" class="form-control" Autocomplete=off>
+                                    <option value="" selected disabled>
+                                    <option>&#x24;</option>
+                                    <option>&#xa3;</option>
+                                    <option>&#xa5;</option>
+                                    <option>&#x20A8;</option>
+                                    <option>&#x20AC;</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Product's Color :</label>
+                            <div class="color-wrapper input-group">
+                                <span class="input-group-addon "><i class="fa fa-paint-brush"></i></span>
+                                <input type="text" name="custom_color" placeholder="#FFFFFF" id="pickcolor"
+                                    class="call-picker">
+                                <div class="color-holder call-picker"></div>
+                                <div class="color-picker" id="color-picker" style="display: none"></div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="ProductStatus">Product's status:</label>
+                            <div class="input-group  ">
+                                <span class="input-group-addon "><i class="fa fa-money"></i></span>
+                                <select id="ProductStatus" class="form-control" Autocomplete=off>
+                                        <option value="" selected disabled>
+                                    <option>Active</option>
+                                    <option>Inactive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <label for="Image">Upload Image :</label>
+                        <div class=" input-group ">
+                            <div class="custom-file">
+                                <input class="form-control" type="file" data-content="product-file" />
+                            </div>
+                            <div class="input-group-append">
+                                <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter"
+                                    data-content="product-button" >
+                                    Preview Image
+                                </button></div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="form-group ">
+                        <label for="Product's Description">Product's description:</label>
+                        <textarea class="form-control" id="ProductDescription" rows="6"></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="form-control pr" data-content=".product-operation" data-target="#product-operation"  onclick="previewFilesOfProduct()">Add</button>
+
+                </form>
+
+
+
+            </div>
+
+
+
+
+
+    </section>
+    <section class="product-operation" id="product-operation">
+        <div  >
+            <div class="card" >
+                
+                    <div class="card-header">
+                           <strong>Product operation</strong>
+                          </div>
+                          <div class="table-responsive">
+            <table id="myTable3" class="card-table table" >
+                   
+                <tbody class="card-body">
+                  
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Color</th>
+                        <th>Status</th>
+                        <th>Description</th>
+                        <th>operation</th>
+                       
+                      
+                        
+                    </tr>
+                  </tbody>
+            </table>
+         </div>
+    </div>
+    </div>
+    </section>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="home.js"></script>
+    <script src="jquery.nicescroll.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+
+</body>
+
+</html>
